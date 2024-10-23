@@ -34,7 +34,7 @@ module "vpc1_vsi" {
   zone               = "eu-es-1"
   instance_name      = "vsi-vpc1"
   image              = "ibm-centos-stream-9-amd64-8"
-  instance_profile   = "bx2-2x8"
+  instance_profile   = "cx2-2x4"
   ssh_keys           = module.ssh_key.ssh_keys
   resource_group_id  = "72860aa0928e43e5979bc8f33214234d"
 }
@@ -46,7 +46,7 @@ module "vpc2_vsi" {
   zone               = "eu-es-2"
   instance_name      = "vsi-vpc2"
   image              = "ibm-centos-stream-9-amd64-8"
-  instance_profile   = "bx2-2x8"
+  instance_profile   = "cx2-2x4"
   ssh_keys           = module.ssh_key.ssh_keys
   resource_group_id  = "72860aa0928e43e5979bc8f33214234d"
 }
